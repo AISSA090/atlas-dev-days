@@ -122,6 +122,10 @@ footer p {
     h1 {
         font-size: 28px;
     }
+    .grille-intervenants {
+        flex-direction: column;
+        align-items: center; 
+    }
 }
 .actif {
     background-color: #999999;
