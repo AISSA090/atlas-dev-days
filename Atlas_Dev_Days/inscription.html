@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Dev Days - inscription </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   
+    <div class="maquette-figma">
+        
+        
+    
+        <img src="images/background.jpg" alt="background" class="bg-image">
+        
+        <nav>
+            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="regroupement">
+                <a href="index.html" >Accueil</a>
+                <a href="programme.html">Programme</a>
+                <a href="intervennant.html">Intervennant</a>
+                <a href="inscription.html"class="actif">Inscription</a>
+            </div>
+        </nav>
+        <main>
+            <div  class="formulaire">
+            <h2>Inscription</h2>
+            <form action="#" method="POST" onsubmit="alert('Votre inscription a bien été enregistrée.'); this.reset(); return false;">
+                <div class="input">
+                   <label for="nom">Nom et Prenom :</label>
+                   <input type="text" id="fullname" name="nom" required>
+                </div>
+                 <div class="input">
+                   <label for="email">Email :</label>
+                   <input type="email" id="email" name="email" required>
+                </div>
+                 <div class="input">
+                   <label for="num-tel">Numero  de Telephone :</label>
+                   <input type="tel" id="Telephone" name="Telephone" required>
+                </div>
+                 <div class="checkbox">
+                   <input type="checkbox" id="checkbox" name="check" required>
+                   <label for="checkbox">J'accepte le règlement</label>
+                </div>
+                <button type="submit" class="submit-button">submit</button>
+            </form>
+
+          
+        
+        </main>
+       
+        <footer>
+            <p>© 2026 Atlas Dev Days Nador. Tous droits réservés.</p>
+        </footer>
+
+    </div> 
+</body>
+
+</html>
