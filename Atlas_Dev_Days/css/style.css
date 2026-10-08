@@ -76,7 +76,7 @@ main {
 .mon-bouton {
     background-color: #2b2b2b;
     color: white;
-    padding: 15px 40px;
+    padding: 30px 6%;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -226,3 +226,34 @@ button.submit-button{
     padding: 15px 40px;
     border-radius: 5px;
 }
+.button-links{
+    display:flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top:10px;
+    padding-bottom: 15px;
+}
+.logo-photo{
+    width: 30px;
+    height: 30px;
+    transition:transform 0.3 ease;
+}
+.button-links a:hover .logo-photo{
+    transform: scale(1,1)
+}
+.apercu-intervenants{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #999999;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width : fit-content;
+}
+.apercu-intervenants a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#222222;
+}  
