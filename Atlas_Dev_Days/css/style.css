@@ -28,8 +28,6 @@ body::-webkit-scrollbar {
 }
 .maquette-figma a:hover{
     color: gray;
-    text-decoration: underline;
-
 }
 
 .bg-image {
@@ -56,12 +54,12 @@ nav {
 }
 
 .logo {
-    height: 140px;
+    height: 250px;
 }
 
 .regroupement {
     display: flex;
-    gap: 40px;
+    gap: 50px;
 }
 
 .regroupement a {
