@@ -14,6 +14,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 
 .maquette-figma {
     width: 100%;
@@ -24,7 +27,7 @@ body {
     overflow: hidden;
 }
 .maquette-figma a:hover{
-    color: white;
+    color: gray;
     text-decoration: underline;
 
 }
@@ -47,10 +50,9 @@ nav, main, footer {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 5px 10px;
-    background-color: #e0e0e0;
+    background-color:transparent;
 }
 
 .logo {
@@ -112,6 +114,9 @@ footer p {
     font-weight: bold;
     font-size: 12px;
 }
+main {
+    animation: fadeIn 0.8s ease-out forwards;
+}
 
 @media (max-width: 768px) {
     .maquette-figma {
@@ -144,8 +149,11 @@ footer p {
     }
 }
 .actif {
-    background-color: #999999;
-    padding: 5px 15px;
+    background-color: transparent; 
+    color: var(--bg-bouton); 
+    font-weight: bold;
+    border-bottom: 2px solid var(--bg-bouton); 
+    padding-bottom: 5px; 
 }
 .jour-section {
     width: 85%; 
@@ -181,6 +189,11 @@ footer p {
     display: flex;
     flex-direction: column;
     overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.carte-intervenant:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
 }
 .nom {
     margin: 0;
@@ -321,3 +334,13 @@ input[type="radio"]:focus {
     outline: 2px solid var(--bg-gris-fonce);
     outline-offset: 3px;
 } 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
